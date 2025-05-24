@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yash Sharma - Finance Aspirant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -12,29 +11,61 @@
       padding: 2rem;
       background: #f9f9f9;
     }
+
     h1 {
-      font-size: 1.8rem;
+      font-size: 2rem;
       margin-top: 1rem;
     }
+
     p {
       max-width: 500px;
       margin: 1rem auto;
+      font-size: 1rem;
+      line-height: 1.5;
     }
+
     .button {
       background-color: #2c2c3e;
       color: white;
       border: none;
       padding: 1rem 2rem;
       margin: 1rem auto;
-      width: 60%;
+      width: 80%;
+      max-width: 300px;
       border-radius: 30px;
       font-size: 1rem;
       cursor: pointer;
-      display: block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-decoration: none;
+      gap: 10px;
     }
-    #qr-container {
-      margin-top: 2rem;
+
+    .button img {
+      width: 20px;
+      height: 20px;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 0.95rem;
+      }
+
+      .button {
+        font-size: 0.95rem;
+        padding: 0.9rem 1.5rem;
+        width: 100%;
+      }
+
+      .button img {
+        width: 18px;
+        height: 18px;
+      }
     }
   </style>
 </head>
@@ -46,8 +77,14 @@
     I'm currently pursuing CFA Level 1 and constantly seeking growth opportunities in finance and investments.
   </p>
 
-  <a class="button" href="https://www.linkedin.com/in/yash-sharma-6b476b207/" target="_blank">LinkedIn</a>
-  <a class="button" href="Yash_Sharma_Resume.pdf" target="_blank">Yash Sharma Resume</a>
+  <a class="button" href="https://www.linkedin.com/in/yash-sharma-6b476b207/" target="_blank">
+    <img src="linkedin.png" alt="LinkedIn"> LinkedIn
+  </a>
+
+  <a class="button" href="Yash_Sharma_Resume.pdf" target="_blank">
+    <img src="resume.png" alt="Resume"> Yash Sharma Resume
+  </a>
 
 </body>
 </html>
+
