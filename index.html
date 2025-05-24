@@ -5,13 +5,44 @@
   <title>Yash Sharma - Finance Aspirant</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
       font-family: Arial, sans-serif;
       text-align: center;
-      padding: 2rem;
-      background: url('background.jpg') no-repeat center center fixed;
-      background-size: cover;
       color: white;
+      min-height: 100vh;
+      background: url('Background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+    }
+
+    /* Dark overlay to make text pop */
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.55); /* semi-transparent black */
+      z-index: 0;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      padding: 2rem;
+    }
+
+    .profile-pic {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      border: 3px solid white;
+      object-fit: cover;
+      margin-bottom: 1rem;
     }
 
     h1 {
@@ -26,19 +57,10 @@
       line-height: 1.5;
     }
 
-    .profile-pic {
-      width: 130px;
-      height: 130px;
-      border-radius: 50%;
-      border: 3px solid white;
-      object-fit: cover;
-      margin-bottom: 1rem;
-    }
-
     .button {
-      background-color: rgba(0, 0, 0, 0.6);
+      background-color: rgba(255, 255, 255, 0.15);
       color: white;
-      border: none;
+      border: 1px solid white;
       padding: 0.8rem 1.5rem;
       margin: 1rem auto;
       width: 80%;
@@ -55,7 +77,7 @@
     }
 
     .button:hover {
-      background-color: rgba(0, 0, 0, 0.8);
+      background-color: rgba(255, 255, 255, 0.3);
     }
 
     .button img {
@@ -88,32 +110,34 @@
 </head>
 <body>
 
-  <!-- 👇 Profile Picture -->
-  <img src="my photo.jpg" alt="Yash Sharma" class="profile-pic">
+  <div class="content">
+    <img src="my photo.jpg" alt="Yash Sharma" class="profile-pic">
 
-  <h1>Yash Sharma - Finance Aspirant</h1>
-  
-  <p>
-    <em>BBA Graduate | Aspiring Finance Professional | CFA Level 1 Candidate | Data-Driven Thinker</em><br><br>
+    <h1>Yash Sharma - Finance Aspirant</h1>
 
-    Welcome to my professional space.<br><br>
+    <p>
+      <em>BBA Graduate | Aspiring Finance Professional | CFA Level 1 Candidate | Data-Driven Thinker</em><br><br>
 
-    With a Bachelor of <strong>Business Administration degree</strong> and <strong>diplomas in FinTech and Financial Planning</strong>, I’m passionate about finance, investments, and business strategy. Currently preparing for the <strong>CFA Level 1</strong> exam, I combine analytical skills with practical knowledge to solve complex problems and drive results.<br><br>
+      Welcome to my professional space.<br><br>
 
-    Here, you can go ahead and explore my CV and LinkedIn profile. Whether you’re a recruiter, mentor, or fellow finance enthusiast, I’d love to connect, collaborate, and learn together.<br><br>
+      With a Bachelor of <strong>Business Administration degree</strong> and <strong>diplomas in FinTech and Financial Planning</strong>, I’m passionate about finance, investments and business strategy. Currently preparing for the <strong>CFA Level 1</strong> exam, I combine analytical skills with practical knowledge to solve complex problems and drive results.<br><br>
 
-    Let’s build a network based on growth, curiosity, and meaningful opportunities.
-  </p>
+      Here, you can go ahead and explore my CV and LinkedIn profile. Whether you’re a recruiter, mentor, or fellow finance enthusiast, I’d love to connect, collaborate, and learn together.<br><br>
 
-  <a class="button" href="https://www.linkedin.com/in/yash-sharma-6b476b207/" target="_blank">
-    <img src="Linkedin-logo.jpg" alt="LinkedIn Logo"> LinkedIn
-  </a>
+      Let’s build a network based on growth, curiosity, and meaningful opportunities.
+    </p>
 
-  <a class="button" href="Yash_Sharma_Resume.pdf" target="_blank">
-    <img src="Resume-logo.jpg" alt="Resume Icon"> Yash Sharma Resume
-  </a>
+    <a class="button" href="https://www.linkedin.com/in/yash-sharma-6b476b207/" target="_blank">
+      <img src="Linkedin-logo.jpg" alt="LinkedIn Logo"> LinkedIn
+    </a>
+
+    <a class="button" href="Yash_Sharma_Resume.pdf" target="_blank">
+      <img src="Resume-logo.jpg" alt="Resume Icon"> Yash Sharma Resume
+    </a>
+  </div>
 
 </body>
 </html>
+
 
 
