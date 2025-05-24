@@ -1,46 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Yash Sharma - Finance Aspirant</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    /* Background image and fallback color */
     body {
       font-family: Arial, sans-serif;
       text-align: center;
       padding: 2rem;
-      background: url(Background.jpg') no-repeat center center fixed;
+      background: url('background.jpg') no-repeat center center fixed;
       background-size: cover;
-      /* Default font color, change if background is dark */
       color: white;
-      transition: color 0.3s ease;
-    }
-
-    /* Container with slight transparent background for readability */
-    .content-container {
-      background-color: rgba(0, 0, 0, 0.6); /* dark transparent bg */
-      padding: 2rem;
-      border-radius: 10px;
-      display: inline-block;
-      max-width: 600px;
-    }
-
-    /* Image styling (profile photo above "I am Yash" text) */
-    .profile-photo {
-      width: 140px;
-      height: 140px;
-      object-fit: cover;
-      border: 4px solid #fff;
-      border-radius: 50%;
-      margin-bottom: 1rem;
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
     }
 
     h1 {
       font-size: 2rem;
       margin-top: 1rem;
-      color: inherit; /* same as body text color */
     }
 
     p {
@@ -48,22 +24,19 @@
       margin: 1rem auto;
       font-size: 1rem;
       line-height: 1.5;
-      color: inherit;
     }
 
-    em {
-      font-style: normal;
-      font-weight: 600;
-      color: #ccc;
-    }
-
-    strong {
-      font-weight: 700;
-      color: #fff;
+    .profile-pic {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      border: 3px solid white;
+      object-fit: cover;
+      margin-bottom: 1rem;
     }
 
     .button {
-      background-color: #2c2c3e;
+      background-color: rgba(0, 0, 0, 0.6);
       color: white;
       border: none;
       padding: 0.8rem 1.5rem;
@@ -76,19 +49,19 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 12px;
+      gap: 10px;
       text-decoration: none;
       transition: background-color 0.3s;
     }
 
     .button:hover {
-      background-color: #444;
+      background-color: rgba(0, 0, 0, 0.8);
     }
 
     .button img {
-      width: 22px;
-      height: 22px;
-      display: inline-block;
+      width: 18px;
+      height: 18px;
+      object-fit: contain;
     }
 
     @media (max-width: 600px) {
@@ -107,46 +80,38 @@
       }
 
       .button img {
-        width: 20px;
-        height: 20px;
-      }
-
-      .profile-photo {
-        width: 100px;
-        height: 100px;
+        width: 16px;
+        height: 16px;
       }
     }
   </style>
 </head>
 <body>
 
-  <div class="content-container">
-    <!-- Profile Photo above the intro -->
-    <img class="profile-photo" src="your-photo.jpg" alt="Yash Sharma Photo" />
+  <!-- 👇 Profile Picture -->
+  <img src="profile.jpg" alt="Yash Sharma" class="profile-pic">
 
-    <h1>Yash Sharma - Finance Aspirant</h1>
-    <p>
-      👋 Hi, I’m Yash Sharma<br />
-      <em>BBA Graduate | Aspiring Finance Professional | CFA Level 1 Candidate | Data-Driven Thinker</em>
-    </p>
-    <p>
-      Welcome to my professional space.<br /><br />
+  <h1>Yash Sharma - Finance Aspirant</h1>
+  
+  <p>
+    <em>BBA Graduate | Aspiring Finance Professional | CFA Level 1 Candidate | Data-Driven Thinker</em><br><br>
 
-      With a Bachelor of <strong>Business Administration degree</strong> and <strong>diplomas in FinTech and Financial Planning</strong>, I’m passionate about finance, investments, and business strategy. Currently preparing for the <strong>CFA Level 1</strong> exam, I combine analytical skills with practical knowledge to solve complex problems and drive results.<br /><br />
+    Welcome to my professional space.<br><br>
 
-      Here, you can go ahead and explore my CV and LinkedIn profile. Whether you’re a recruiter, mentor, or fellow finance enthusiast, I’d love to connect, collaborate, and learn together.<br /><br />
+    With a Bachelor of <strong>Business Administration degree</strong> and <strong>diplomas in FinTech and Financial Planning</strong>, I’m passionate about finance, investments, and business strategy. Currently preparing for the <strong>CFA Level 1</strong> exam, I combine analytical skills with practical knowledge to solve complex problems and drive results.<br><br>
 
-      Let’s build a network based on growth, curiosity, and meaningful opportunities.
-    </p>
+    Here, you can go ahead and explore my CV and LinkedIn profile. Whether you’re a recruiter, mentor, or fellow finance enthusiast, I’d love to connect, collaborate, and learn together.<br><br>
 
-    <a class="button" href="https://www.linkedin.com/in/yash-sharma-6b476b207/" target="_blank">
-      <img src="Linkedin-logo.jpg" alt="LinkedIn Logo" /> LinkedIn
-    </a>
+    Let’s build a network based on growth, curiosity, and meaningful opportunities.
+  </p>
 
-    <a class="button" href="Yash_Sharma_Resume.pdf" target="_blank">
-      <img src="Resume-logo.jpg" alt="Resume Icon" /> Yash Sharma Resume
-    </a>
-  </div>
+  <a class="button" href="https://www.linkedin.com/in/yash-sharma-6b476b207/" target="_blank">
+    <img src="Linkedin-logo.jpg" alt="LinkedIn Logo"> LinkedIn
+  </a>
+
+  <a class="button" href="Yash_Sharma_Resume.pdf" target="_blank">
+    <img src="Resume-logo.jpg" alt="Resume Icon"> Yash Sharma Resume
+  </a>
 
 </body>
 </html>
