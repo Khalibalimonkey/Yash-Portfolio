@@ -9,9 +9,31 @@
       font-family: Arial, sans-serif;
       text-align: center;
       padding: 2rem;
-      background: #f9f9f9;
+      background: url(Background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      /* Default font color, change if background is dark */
+      color: white;
+      transition: color 0.3s ease;
+    }
+ /* Container with slight transparent background for readability */
+    .content-container {
+      background-color: rgba(0, 0, 0, 0.6); /* dark transparent bg */
+      padding: 2rem;
+      border-radius: 10px;
+      display: inline-block;
+      max-width: 600px;
     }
 
+    /* Image styling (profile photo above "I am Yash" text) */
+    .profile-photo {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border: 4px solid #fff;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    
     h1 {
       font-size: 2rem;
       margin-top: 1rem;
@@ -22,6 +44,7 @@
       margin: 1rem auto;
       font-size: 1rem;
       line-height: 1.5;
+      color: inherit;
     }
 
     .button {
