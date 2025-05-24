@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Yash Sharma - Finance Aspirant</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 2rem;
+      background: #f9f9f9;
+    }
+    img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    h1 {
+      font-size: 1.8rem;
+      margin-top: 1rem;
+    }
+    p {
+      max-width: 500px;
+      margin: auto;
+      margin-top: 1rem;
+    }
+    .button {
+      background-color: #2c2c3e;
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+      margin: 1rem auto;
+      width: 60%;
+      border-radius: 30px;
+      font-size: 1rem;
+      cursor: pointer;
+      display: block;
+      text-decoration: none;
+    }
+    #qr-container {
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="profile.jpg" alt="Yash Sharma" />
+  <h1>Yash Sharma - Finance Aspirant</h1>
+  <p>
+    I’m Yash Sharma — a finance-driven individual with a background in BBA, FinTech & Financial Planning.
+    I'm currently pursuing CFA Level 1 and constantly seeking growth opportunities in finance and investments.
+  </p>
+
+  <a class="button" href="https://www.linkedin.com/in/yash-sharma-6b476b207/" target="_blank">LinkedIn</a>
+  <a class="button" href="Yash_Sharma_Resume.pdf" target="_blank">Yash Sharma Resume</a>
+
+  <div id="qr-container">
+    <h2>Scan QR for this Page</h2>
+    <div id="qrcode"></div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script>
+    new QRCode(document.getElementById("qrcode"), {
+      text: window.location.href,
+      width: 128,
+      height: 128
+    });
+  </script>
+
+</body>
+</html>
