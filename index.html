@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Yash Sharma - Finance Aspirant</title>
+  <title>YASH SHARMA - FINANCE ASPIRANT </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     * {
@@ -11,29 +11,36 @@
       box-sizing: border-box;
     }
 
-    body {
+    html, body {
+      height: 100%;
       font-family: Arial, sans-serif;
-      text-align: center;
-      color: white;
-      min-height: 100vh;
+    }
+
+    body {
       background: url('Background.jpg') no-repeat center center fixed;
       background-size: cover;
+      color: white;
       position: relative;
     }
 
-    /* Dark overlay to make text pop */
     body::before {
       content: "";
-      position: absolute;
+      position: fixed;
       top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(0, 0, 0, 0.55); /* semi-transparent black */
+      background: rgba(0, 0, 0, 0.55);
       z-index: 0;
     }
 
     .content {
       position: relative;
       z-index: 1;
-      padding: 2rem;
+      padding: 2rem 1rem;
+      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
 
     .profile-pic {
@@ -47,14 +54,14 @@
 
     h1 {
       font-size: 2rem;
-      margin-top: 1rem;
+      margin: 1rem 0 0.5rem;
     }
 
     p {
-      max-width: 500px;
+      max-width: 600px;
       margin: 1rem auto;
       font-size: 1rem;
-      line-height: 1.5;
+      line-height: 1.6;
     }
 
     .button {
@@ -62,7 +69,7 @@
       color: white;
       border: 1px solid white;
       padding: 0.8rem 1.5rem;
-      margin: 1rem auto;
+      margin: 0.5rem auto;
       width: 80%;
       max-width: 320px;
       border-radius: 30px;
@@ -134,14 +141,15 @@
     <a class="button" href="Yash_Sharma_Resume.pdf" target="_blank">
       <img src="Resume-logo.jpg" alt="Resume Icon"> Resume
     </a>
-    <a class="button" href="mailto:sharma.yash040501@gmail.com">
-  <img src="email.png" alt="Email Icon"> Email Me
-</a>
 
+    <a class="button" href="mailto:sharma.yash040501@gmail.com">
+      <img src="email.png" alt="Email Icon"> Email Me
+    </a>
   </div>
 
 </body>
 </html>
+
 
 
 
